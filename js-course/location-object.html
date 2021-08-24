@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Object</title>
+</head>
+<body>
+    <h1>Welcome to Location Object</h1>
+    <button onclick="locationFunction()">Click</button><br><br>
+</body>
+<!-- 
+hash: ""
+host: "127.0.0.1:5500"
+hostname: "127.0.0.1"
+href: "http://127.0.0.1:5500/JS%20Course/location-object.html"
+origin: "http://127.0.0.1:5500"
+pathname: "/JS%20Course/location-object.html"
+port: "5500" -->
+
+<script>
+    document.write("Host: " + location.host + "<br>");
+    document.write("Host Name: " + location.hostname + "<br>");
+    document.write("URL: " + location.href + "<br>");
+    document.write("Origin: " + location.origin + "<br>");
+    document.write("Pathname: " + location.pathname + "<br>");
+    document.write("Port: " + location.port + "<br>");
+    document.write("Protocol: " + location.protocol + "<br>");
+
+    function locationFunction(){
+        //location.reload(); // reload the page
+       // location.assign("https://www.growbig.com.bd") // Assign the new URL
+        location.replace("https://www.growbig.com.bd") // Replace the new URL
+    }
+</script>
+</html>

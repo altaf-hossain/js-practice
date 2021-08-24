@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Animation</title>
+    <style>
+        #test{
+            background: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        #test2{
+            background: red;
+            height: 100px;
+            margin-top: 20px;
+            width: 100px; 
+        }
+        button{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <button onclick="stopAnimation()">Stop Animation</button>
+    <div id="test2"></div>
+    <button onclick="stopAnimation2()">Stop Animation</button>
+    <script>
+        var a = 0;
+        var animId = setInterval(anim, 100);
+
+        function anim(){
+            a = a + 10;
+            if(a == 600){
+                clearInterval(animId);
+            }else{
+                var target = document.getElementById("test");
+                target.style.marginLeft = a + "px";
+            }
+           // console.log(a);
+          
+        }
+
+        function stopAnimation() {
+            clearTimeout(animId);
+        }
+
+        /*setTimeout & clearTimeout*/
+        var id = setTimeout(function(){
+            var target = document.getElementById("test2");
+            target.style.width = "300px";
+        }, 3000);
+
+        function stopAnimation2() {
+            clearTimeout(id);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript createElement & createTextNode  </title>
+    <style>
+        #test{
+            background-color: tan;
+            min-width: 500px;
+            min-height: 200px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>JavaScript createElement & createTextNode </h1>
+    
+    <div id="test" class="abc">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, hic. Qui deserunt vitae velit repellat eum optio a, dignissimos saepe, aperiam incidunt nisi explicabo reiciendis commodi consectetur ipsam sapiente molestias quae esse ipsa? Alias quo, corrupti perferendis beatae pariatur, neque quia, saepe vitae adipisci libero cupiditate repudiandae aut quae? Explicabo!
+        </p>
+        <h3>This is head 3</h3>
+    </div>
+
+    <ul id="list">
+        <li class="abc">Orange</li>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Water Melon</li>
+    </ul>
+
+    <ul id="list2">
+        <li>Carrot</li>
+        <li>Reddish</li>
+        <li class="abc">Orange</li>
+    </ul>
+
+    <div id="containsTest">
+        <h2>DOM Contains Method</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quod!</p>
+        <div><p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, similique.</p>
+        </div>
+    </div>
+
+    <div id="hasParagrap" class="abc">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo placeat omnis atque voluptas dolore possimus quae. Odit minima eligendi quam.</p>
+    </div>
+
+    <script>
+        var newElement = document.createElement("h2");
+        var newText = document.createTextNode("This is Text");
+        var newComment = document.createComment("This is comment");
+
+        newElement.appendChild(newText);
+        //document.getElementById("test").appendChild(newElement);
+        //document.getElementById("test").appendChild(newComment);
+        var target = document.getElementById("test");
+
+       target.insertBefore(newElement, target.childNodes[0]);
+
+    
+        // console.log(newElement);
+        // console.log(newText);
+        // console.log(newComment);
+
+       // target.insertAdjacentElement("afterend", newElement);
+
+        // var newhtmlElement = "<h2>This is heading 2</h2>"
+
+        // target.insertAdjacentHTML("afterend", newhtmlElement);
+
+        // var newText = "This is new Paragrap Text";
+        // target.insertAdjacentText("beforeend", newText);
+
+        // var newLielement = document.createElement("li");
+        // var newLitext = document.createTextNode("wow text");
+
+        // newLielement.appendChild(newLitext);
+
+        // var liTarget = document.getElementById("list");
+
+        // var oldLi = liTarget.children[1];
+
+        //console.log(oldLi);
+
+        //liTarget.replaceChild(newLielement, oldLi);
+
+        //liTarget.removeChild(oldLi);
+
+        //***** cloneNode method start
+
+        // var cloneElement = document.getElementById("list").children[0];
+        // var copyElement = cloneElement.cloneNode(true);
+
+        //console.log(copyElement);
+
+        // document.getElementById("list2").appendChild(copyElement);
+
+        /* Start Contains Method Example */
+
+        // var parentElement = document.getElementById("containsTest");
+        // var containsTarget = document.getElementById("abc");
+
+        //var find = parentElement.contains(containsTarget);
+
+        //console.log(find);
+
+        /* hasAttribute & hasChildNodes Example */
+
+        //var hasTarget = document.getElementById("hasParagrap");
+        //var hasFind = hasTarget.hasAttribute("class");
+
+        //var hasFind = hasTarget.hasChildNodes();
+
+       // console.log(hasFind);
+
+        /* isEqualNode Example */
+
+        target1=document.getElementById("list").firstElementChild;
+        target2=document.getElementById("list2").children[2];
+
+        var equal = target1.isEqualNode(target2);
+
+        console.log(equal);
+        
+    </script>
+</body>
+</html>

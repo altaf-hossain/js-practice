@@ -1,0 +1,2900 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Practice</title>
+</head>
+
+<body>
+<h1>Welcome to Javascript</h1>
+<script type="text/javascript">
+var name = "My Name is Altaf "
+document.write (name);
+var sum = 10 + 10;
+document.write(sum);
+var difference = 45 - 12;
+document.write(difference); 
+var product = 8 * 10;
+document.write(product);
+
+var quotient = 66 / 33;
+document.write(quotient);
+
+var myVar = 87;
+myVar++;
+document.write(myVar);
+
+var myVar = 11;
+myVar--;
+document.write(myVar);
+
+var myDecimal = 5.7;
+document.write(myDecimal);
+
+var product = 2.0 * 2.5;
+document.write(product);
+
+var decimalQuotient = 4.4 / 2;
+document.write(decimalQuotient);
+
+var remainder = 11 % 3;
+document.write(remainder);
+
+var a = 3;
+var b = 17;
+var c = 12;
+
+// Only change code below this line
+a += 12;
+b += 9;
+c += 7;
+
+document.write(a,b,c);
+
+var a = 11;
+var b = 9;
+var c = 3;
+
+a -= 6;
+b -= 15;
+c -= 1;
+
+document.write(a,b,c);
+
+var a = 5;
+var b = 12;
+var c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+
+document.write(a,b,c);
+
+var a = 48;
+var b = 108;
+var c = 33;
+
+// Only change code below this line
+a /= 12;
+b /= 4;
+c /= 11;
+
+document.write(a,b,c);
+
+var myFirstName = " Altaf";
+var myLastName = " Hossain"
+
+document.write(myFirstName,myLastName);
+
+var myStr = " I am a \"double quoted\" string inside \"double quotes\". "; // Change this line
+document.write(myStr);
+
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+document.write(myStr);
+
+var multipleStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+document.write(multipleStr);
+
+var myStr= "This is the start. and " + "This is the end.";
+document.write(myStr);
+
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence."
+document.write(myStr);
+
+var myName = "Altaf";
+var myStr = "My name is " + myName + " and I am well!";
+document.write(myStr);
+
+var someAdjective = "fun.";
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+document.write(myStr);
+
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+
+// Only change code below this line
+
+lastNameLength = lastName.length;
+document.write(lastNameLength);
+
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+
+document.write(firstLetterOfLastName);
+
+// Setup
+var myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line
+document.write(myStr);
+
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var thirdLetterOfLastName = lastName[2]; // Change this line
+document.write(thirdLetterOfLastName);
+
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
+document.write(lastLetterOfLastName);
+
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+// Only change code below this line
+var wordBlanks = "My" + myNoun + " size is " + myAdjective + ", it's can " + myVerb + " so " + myAdverb; // Change this line
+// Only change code above this line
+document.write(wordBlanks);
+
+var myArray = ["H",2,"O"];
+document.write(myArray);
+
+// Only change code below this line
+var myArray = [["White Box", 23], ["Tisue", 45]];
+document.write(myArray);
+var tisuBox = [["White Color", 1000], ["Red Color", 3000]]
+document.write(tisuBox);
+
+// Setup
+var myArray = [50,60,70];
+
+// Only change code below this line
+var myData = myArray[0];
+document.write(myData);
+
+// Setup
+var myArray = [18,64,99];
+myArray[0] = 45;
+document.write(myArray);
+
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]]
+// Only change code below this line
+var myData = myArray[2][1];
+document.write(myData); 
+
+var multiDimenArray = [1, [2, 3], 3, 4, [5, 6, [1, 3, [7, 12, 10], 4], 7], 8];
+
+var myData = multiDimenArray[4][2][2][1];
+document.write(myData);
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+myArray.push(["dog", 3]);
+document.write(myArray);
+
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+var removedFromMyArray = myArray.pop();
+document.write(removedFromMyArray);
+document.write(myArray);
+
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+var removedFromMyArray = myArray.shift();
+document.write(removedFromMyArray);
+document.write(myArray);
+
+
+// Only change code below this line
+myArray.unshift(["Paul", 35]);
+document.write(myArray);
+
+var myList = [["Biscuit", 5,], ["Chocolate Bar", 10], ["Fish", 6], ["Ice-cream", 7], ["Milk", 16]];
+document.write(myList);
+
+// function practice start from here
+
+function reusableFunction(){
+    document.write("Hi World");
+}
+
+reusableFunction();
+
+function functionWithArgs(param1, param2){
+    var sumText = param1+param2;
+    document.write(sumText);
+
+}
+
+functionWithArgs("Hey", "World!");
+
+function functionWithaddition(a, b){
+    var sum = a+b;
+    document.write(sum);
+
+}
+
+functionWithaddition(12, 5);
+
+
+function functionWithSubstraction(a, b){
+    var substraction = a-b;
+    document.write(substraction);
+
+}
+
+functionWithSubstraction(12, 5);
+
+function functionWithMultification(a, b){
+    var multiplication = a*b;
+    document.write(multiplication);
+
+}
+
+functionWithMultification(12, 5);
+
+//Global Scope & Function
+
+var myGlobal = 10;
+
+function fun1(){
+    oopsGlobal = 5;
+}
+
+function fun2(){
+    var output = "";
+
+    if(typeof myGlobal != "undefined"){
+        output += " MyGlobal: " + myGlobal;
+    }
+
+    if(typeof oopsGlobal != "undefined"){
+        output += " oopsGlobal: " + oopsGlobal;
+    }
+
+    //console.log(output);
+    document.write(output);
+}
+
+fun1();
+fun2();
+
+// Local scope and function example
+
+function myLocalScope() {
+var locVar = "I'm Local variable";
+  // Only change code below this line
+
+  //console.log('inside myLocalScope', myVar);
+ document.write(' inside myLocalScope: ', locVar);
+}
+myLocalScope();
+
+
+
+// Global vs Local scope of function
+
+// Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+
+ var outerWear = "sweater"
+
+  // Only change code above this line
+  document.write(" " + outerWear);
+}
+
+myOutfit();
+
+// Return a value in function with Return
+
+function timesFive (num){
+    return num * 5;
+}
+var answer = timesFive(6);
+document.write(answer);
+
+// Assignmet with a return value
+
+// Setup
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+
+processed = processArg(7);
+document.write(processed);
+
+//Stand in line
+
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  return arr.shift();
+  // Only change code above this line
+  
+
+}
+
+// Setup
+var testArr = [1,2,3,4,5];
+
+// Display code
+document.write(" Before: " + JSON.stringify(testArr));
+document.write(nextInLine(testArr, 6));
+document.write(" After: " + JSON.stringify(testArr));
+
+// IF conditional Statement 
+
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+  if (wasThatTrue){
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+
+
+  // Only change code above this line
+
+}
+document.write(trueOrFalse(true));
+//document.write(trueOrFalse(false));
+
+//Comparison with equality opereator 
+
+// Setup
+function testEqual(val) {
+  if (val == 12) { // Change this line
+    return " Equal";
+  }
+  return " Not Equal";
+}
+
+document.write(testEqual(12));
+
+// Strict equality operator
+
+// Setup
+function testStrict(val) {
+  if (val === 7) { // Change this line
+    return " Strict Equal";
+  }
+  return " Strict Not Equal";
+}
+
+document.write(testStrict("7"));
+
+//comparing different values
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+document.write(compareEquality(10, "10"));
+
+//Comparison with inequality operator
+
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+document.write(testNotEqual(10));
+
+//strict equality operator comparison
+// Setup
+function testStrictNotEqual(val) {
+  if (val !== 17) { // Change this line
+    return " Strict Not Equal";
+  }
+  return " Strict Equal";
+}
+
+document.write(testStrictNotEqual(17));
+
+function testStrictNotEqualValue(val){
+  if(val !== 15){
+    return " Custom Strict Not Equal";
+  }
+  return " Custom strict Equal";
+}
+
+document.write(testStrictNotEqualValue(15))
+
+// comparison with the greater than operetor
+
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return " Over 100";
+  }
+
+  if (val > 10) {  // Change this line
+    return " Over 10";
+  }
+
+  return " 10 or Under";
+}
+
+document.write(testGreaterThan(110));
+
+// comparison with greater or equal to operetor
+
+function testGreaterOrEqual(val){
+  if(val >= 20){
+    return "20 or Over";
+  }
+
+  if(val >= 10) {
+    return "10 or Over";
+  }
+
+  return " Less than 10";
+}
+
+document.write(testGreaterOrEqual(999));
+
+// Comparison with less than operator 
+
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return " Under 25";
+  }
+
+  if (val < 55) {  // Change this line
+    return " Under 55";
+  }
+
+  return " 55 or Over";
+}
+
+document.write(testLessThan(21));
+
+// comparison with less or Equal To operator
+
+function testLessOrEqual (val){
+  if(val <= 12){
+    return "Smaller than or Equal to 12";
+  }
+
+  if(val <= 24){
+    return "Smaller than or Equal to 24";
+  }
+
+  return " More Than 24";
+}
+
+document.write(testLessOrEqual(25));
+
+//Comparison with logical and operator
+
+function testLogicalAnd (val){
+  if(val >= 25 && val <= 50){
+    return "Yes";
+  }
+  
+  return "No";
+}
+
+document.write(testLogicalAnd (51));
+
+// Comparisons with the Logical OR operator
+
+function testLogicalOr(val){
+  if(val > 20 || val < 10){
+    return " Outside";
+  }
+  
+  return " Inside";
+}
+
+document.write(testLogicalOr(21));
+
+//Introducing else statement
+
+function  testElse(val){
+  result = "";
+
+  if(val > 5){
+    result = " Bigger than 5";
+  }
+  else{
+    result = " 5 or Smaller"
+  }
+
+  return result;
+}
+
+document.write(testElse(10));
+
+//Introducing else If statement
+
+function testElseIf(val){
+  if (val > 10){
+    return " Bigger than 10";
+  } else if(val < 5) {
+    return " Smaller than 5";
+  } else {
+    return " Between 5 and 10"
+  }
+}
+
+document.write(testElseIf(12));
+
+//Logical Order in else If statement
+
+function orderMyLogic(val){
+  if (val < 5){
+    return " Less than 5";
+  } else if(val < 10) {
+    return " Less than 10";
+  } else {
+    return "  Greater Then or Equal 10";
+  }
+}
+
+document.write(orderMyLogic(11));
+
+// Chaining else if statement 
+
+function testSize(num) {
+  // Only change code below this line
+if (num < 5){
+  return " Tiny";
+} else if (num < 10){
+  return " Small";
+} else if (num < 15){
+  return " Medium";
+} else if (num < 20){
+  return " Large";
+} else if ( num >= 20){
+  return " Huge";
+} else {
+  return " Give your Number";
+}
+
+  // Only change code above this line
+}
+
+document.write(testSize(12));
+
+// Golf Code
+
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strockes){
+  if (strockes == 1) {
+    return names[0];
+  } else if (strockes <= par -2){
+    return names[1];
+  } else if (strockes == par - 1){
+    return names[2];
+  } else if(strockes == par){
+    return names[3];
+  } else if(strockes == par + 1){
+    return names[4];
+  } else if (strockes == par + 2){
+    return names[5];
+  } else if (strockes >= par + 3){
+    return names[6];
+  }
+}
+
+document.write(golfScore(5,1));
+
+
+// Selecting from Many Options with Switch Statements
+
+function caseInSwitch (val){
+  var answer = "";
+  switch(val){
+    case 1:
+      answer = "alpha";
+      break;
+    case 2: 
+      answer = "beta";
+      break;
+    case 3: 
+      answer = "gamma";
+      break;
+    case 4: 
+      answer = "delta";
+      break;
+  }
+  return answer;
+}
+document.write(caseInSwitch(3));
+
+// default option in switch statements
+
+function switchOfStuff(val){
+  var answer ="";
+  switch(val){
+    case "a":
+      answer = " apple";
+      break;
+    case "b": 
+      answer = " bird";
+      break;
+    case "c":
+      answer = " cat";
+      break;
+    default: 
+      answer = " stuff";
+      break;
+  }
+  return answer;
+}
+
+document.write(switchOfStuff("c"));
+
+//Multiple Identical Options in Switch Statements
+
+function sequentialSizes(val){
+  var answer = "";
+  switch(val){
+    case 1: 
+    case 2:
+    case 3: 
+      answer = "Low";
+      break;
+    case 4: 
+    case 5: 
+    case 6:
+      answer = "Mid";
+      break;
+    case 7: 
+    case 8: 
+    case 9: 
+      answer = "High";
+      break;
+  }
+  return answer; 
+  
+}
+
+document.write(sequentialSizes(3));
+
+// Replacing If Else Chains with Switch
+
+function chainToSwitch(val){
+  var answer = "";
+  switch(val){
+    case "bob":
+      answer = "Marley";
+      break;
+    case 42: 
+    answer = "The Answer";
+      break;
+    case 1: 
+      answer = "There is no #1";
+      break;
+    case 99:
+      answer = "Missed me by this much!";
+      break;
+    case 7: 
+      answer = "Ate Nine";
+      break;
+  }
+  return answer;
+}
+
+document.write(chainToSwitch(7));
+
+// Returning Boolean Values from Functions
+
+function isLess (a, b){
+  return a < b;
+}
+
+document.write(isLess(15,10));
+
+// Return early pattern for functions
+
+function abTest(a, b){
+  if (a < 0 || b < 0){
+    return undefined;
+  }
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+  //return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+document.write(abTest(9,8));
+
+// Counting Cards
+
+var count = 0;
+function cc(card){
+  switch(card){
+    case 2: 
+    case 3: 
+    case 4: 
+    case 5: 
+    case 6: 
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break; 
+  }
+
+  var holdbet = "Hold ";
+  if(count > 0){
+    holdbet = "Bet ";
+  }
+
+  return count + " " + holdbet;
+}
+
+document.write(cc(3)); 
+/*document.write(cc(3)); 
+document.write(cc(7)); 
+document.write(cc('K')); 
+document.write(cc('A'));*/
+
+//build object
+
+var myDog = {
+  "name": "Montu",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Man", "Everythings"]
+};
+
+var dogName = myDog.name;
+var dogFriends = myDog.friends;
+
+document.write("The dog's friends is " + dogFriends);
+
+// accessing object properties using Dot Notation
+
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+// Only change code below this line
+
+var hatValue = testObj.hat;      // Change this line
+var shirtValue = testObj.shirt;    // Change this line
+
+document.write(hatValue);
+document.write(shirtValue);
+
+//accessing object properties using bracket notation
+var testObj = {
+  "an entree": " hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+
+var entreeValue = testObj["an entree"];   // Change this line
+var drinkValue = testObj["the drink"];    // Change this line
+
+document.write(entreeValue);
+
+// accessing object properties with variable
+
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+// Only change code below this line
+
+var playerNumber = 16;       // Change this line
+var player = testObj[playerNumber];   // Change this line
+
+document.write(player);
+
+//Update object properties
+
+// Setup
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+
+//myDog.name = "Happy Coder";
+myDog["name"] = "Happy Coder"
+document.write("<br/>My Dog's Name is " + myDog["name"]);
+
+// Add New Properties to a JavaScript Object
+
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line
+
+myDog.bark = "woof";
+
+document.write("<br/>Added new object properties " + myDog.bark);
+
+//delete object properties
+
+delete myDog["tails"];
+document.write("<br/>Delete tails property from object: " + myDog["tails"]);
+
+//using object for lookup
+
+function phoneticLookup(val) {
+  var result = "";
+
+  // Only change code below this line
+  var lookup = {
+    "alpha":"Adams",
+    "bravo":"Boston",
+    "charlie":"Chicago",
+    "delta":"Denver",
+    "echo":"Easy",
+    "foxtrot":"Frank"
+  }
+ result = lookup[val];
+
+  // Only change code above this line
+  return result;
+}
+
+document.write("<br/>" + phoneticLookup("alpha"));
+
+// testing object for properties
+
+var obj = {
+    gift: "pony", 
+    pet: "kitten",
+    bed: "sleigh"
+  }
+
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+
+
+  if(obj.hasOwnProperty(checkProp)){
+    return obj[checkProp];
+  } else{
+    return "Not Found"
+  }
+  return "Change Me!";
+  // Only change code above this line
+}
+
+document.write(checkObj("pet"));
+
+// Manipulating Complex Objects
+var myMusic = [
+  {
+    "artist": "Abu Sufian",
+    "title": "Singer",
+    "release_year": 1988,
+    "formats": [
+      "IslamiSong",
+      "1080P",
+      "HD"
+    ],
+  }
+]
+
+
+// accessing nested object
+// Setup
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+document.write("The output is " + gloveBoxContents);
+
+// accessing nested arry
+
+// Setup
+var myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+var secondTree = myPlants[1].list[1];
+document.write( "<br/> The Second Tree list Item is: " + secondTree);
+
+// Record Collection
+
+// Setup
+var collection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+//keep a copy of collection for test
+var collectionCopy = JSON.parse(JSON.stringify(collection));
+
+// Only change code below this line
+function updateRecords(id, prop, value) {
+  if (value === ""){
+    delete collection [id][prop];
+  } else if (prop === "tracks") {
+    collection[id][prop] = collection[id][prop] || [];
+    collection[id][prop].push(value);
+  } else{
+    collection[id][prop] = value;
+  }
+  return collection;
+}
+updateRecords(2548, "artist", "");
+document.write(updateRecords(5439, "artist", "ABBA"));
+
+// Iterate with JavaScript While Loops
+
+var myArray = [];
+var i = 5;
+while (i >= 0){
+  myArray.push(i);
+  i--;
+}
+
+document.write("<br/> Usign 'while' loop Array: " + myArray);
+
+// Iterate with JavaScript For Loops
+
+var myArray = [];
+
+for ( var i = 1; i <= 5; i++){
+    myArray.push(i);
+}
+
+document.write("<br/> Usign 'for' loop Array: " + myArray);
+
+// Iterate Odd Numbers With a For Loop
+
+var myArray = [];
+for (var i =1; i < 11; i += 2){
+  myArray.push(i);
+}
+
+document.write("<br/> The myArray is: " + myArray);
+
+// Count Backwards With a For Loop
+
+var backArray = [];
+for (var i = 9; i > 0; i -= 2){
+  backArray.push(i);
+}
+
+document.write("<br/> The Backwards Array is: " + backArray);
+
+// Iterate through an array with loop
+
+// Setup
+var myArr = [ 2, 3, 4, 5, 6];
+
+// Only change code below this line
+
+var total = 0;
+for (var i = 0; i < myArr.length; i++){
+    total += myArr[i];
+}
+
+document.write("<br/>The total value is: " + total);
+
+// neste for loop
+
+
+function multiplyAll(arr) {
+  var product = 1;
+  // Only change code below this line
+  for (var i=0; i < arr.length; i++){
+    for (var j=0; j < arr[i].length; j++){
+      product *= arr[i][j];
+    }
+  }
+  // Only change code above this line
+  return product;
+}
+
+var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+document.write("<br/> The Array[[1,2],[3,4],[5,6,7]] Multiply value is: " + product);
+
+//Iterate with JavaScript Do...While Loops
+
+var myArry = [];
+var i = 10;
+do{
+  myArry.push(i);
+  i++;
+}while(i < 10);
+
+document.write ("<br/> Using DO..While myArry value is " + myArry);
+
+// Replace Loops using Recursion
+
+function sum(arr, n) {
+  if(n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+}
+
+// Profile lookup
+
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+function lookUpProfile(name, prop){
+  for (var i = 0; i < contacts.length; i++){
+    if (contacts[i].firstName === name){
+      return contacts[i][prop] || "No such proerty";
+    }
+  }
+  return "No such contact";
+}
+
+document.write("<br/> The property is: " + lookUpProfile("Akira", "address"));
+
+// Generate Random Fractions with JavaScript
+
+function randomFunction(){
+  return Math.random();
+}
+document.write("<br/>The random number is: " + randomFunction());
+
+// Generate Random Whole Numbers with JavaScript
+
+function randomWholenum(){
+  return Math.floor(Math.random() * 10 );
+}
+
+document.write(randomWholenum());
+
+// Generate Random Whole Numbers within a Range
+
+function randomRange (myMin, myMax){
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+document.write(randomRange(5, 16));
+
+// Use the parseInt Function
+function convertToInteger(str){
+  var a = parseInt(str);
+  return a;
+}
+
+document.write("<br/> The interger is: " + convertToInteger("027"));
+
+// Use the parseInt Function with a Radix
+
+function convertToIntegerRadix(str){
+  var a = parseInt(str, 2);
+  return a;
+}
+
+document.write("<br/> The interger is: " + convertToIntegerRadix("1110101"));
+
+// Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not equal";
+}
+
+document.write("<br/> check two number (Using Ternary Operator) : " + checkEqual(2, 2));
+
+// Use Multiple Conditional (Ternary) Operators
+
+function checkSign (num){
+  return num > 0 ? "positive"
+    : num < 0 ? "negetive"
+    : "zero";
+}
+
+document.write("<br/>The Number is: " + checkSign(100));
+
+// Use Recursion to Create a Countdown
+
+function countdown(n){
+  if (n < 1){
+    return [];
+  } else {
+    const countArray = countdown((n - 1));
+    countArray.unshift(n);
+    return countArray;
+  }
+}
+
+document.write("<br/> The countArray is: " + countdown(10));
+
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum - startNum === 0) {
+    return [startNum];
+  } else {
+    var numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+
+document.write("<br/> The rangeArray is: " + rangeOfNumbers(1, 5));
+
+// Explore between var & let keywords
+
+
+
+// Compare scopes of the var and let keywords
+
+function checkScope() {
+  let i = 'function scope';
+  if (true) {
+   let i = 'block scope';
+    console.log('<br/> Block scope i is: ', i);
+  }
+  console.log('<br/> Function scope i is: ', i);
+  return i;
+}
+
+document.write("<br/> The function output is: " + checkScope());
+
+// Declare a Read-Only Variable with the const Keyword
+
+function printManyTimes(str){
+  const SENTENCE = str + " is cool!";
+  for(let i = 0; i < str.length; i+=2){
+    document.write("<br/>" + SENTENCE);
+  }
+}
+
+
+
+// mutate an arry declared with const
+
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
+
+  // Using s = [2, 5, 7] would be invalid
+  s[0] = 2;
+  s[1] = 5;
+  s[2] = 7;
+  // Only change code above this line
+  return s;
+}
+document.write("<br/> The cosnt Array after value change: " + editInPlace());
+
+// Prevent Object Mutation
+
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  // Only change code below this line
+  Object.freeze(MATH_CONSTANTS);
+
+  // Only change code above this line
+  try {
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+
+document.write("<br/> The Value of PI: " + PI);
+
+// Write Arrow Function in Single line
+
+//const magic = () => new date();
+
+//document.write(magic());
+
+// Write Arrow Functions with Parameters
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+document.write("<br/> Concation of two Array is: " + myConcat([1,2], [3,4,5]));
+
+//Set Default Parameters for Your Functions
+const increment = (number, value = 1) => number+value;
+
+document.write("</br> The increment value is: " + increment(5));
+
+//Use the Rest Parameter with Function Parameters
+
+const sumNnumber = (...args) => { return args.reduce((a, b) => a+b, 0); }
+
+document.write("</br> The summation value is: " + sumNnumber(5, 9, 3, 3));
+
+// Use the Spread Operator to Evaluate Arrays In-Place
+
+const arr1 = ["JAN", "FEB", "MARCH", "APRIL", "MAY"];
+
+let arr2;
+
+arr2 = [...arr1];
+
+document.write("<br/> The new Array 2 is: " + arr2);
+
+// Use destructuring Assignmen to extract values from object
+
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+const {today, tomorrow} = HIGH_TEMPERATURES;
+// Only change code above this line
+
+document.write("<br/> Today Temperature is" + today + " and Tomorrow Temperature will be: " + tomorrow);
+
+// Use Destructuring Assignment to Assign Variables from Objects
+
+const HIGH_TEMPERATURES2 = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+}
+
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES2;
+
+document.write( "<br/> highToday Value is: " + highToday + " and highTomorrow Value is: " + highTomorrow);
+
+// Use Destructuring Assignment to Assign Variables from Nested Objects
+
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+const { today: { low: lowForcastToday, high: highForcastToday }} = LOCAL_FORECAST;
+
+document.write( "<br/> lowToday Value is: " + lowForcastToday + " and highToday Value is: " + highForcastToday);
+
+// Use Destructuring Assignment to Assign Variables from Arrays
+
+let ac = 8, dc = 6;
+
+[ac, dc] = [dc, ac];
+
+document.write ("<br/> The result after swipe " + ac, dc);
+
+//Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
+
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list){
+  const [a, b, ...arr] = list;
+  return arr;
+}
+
+const arr = removeFirstTwo(source);
+
+document.write("<br/> After removing first two data now Array is: " + arr);
+
+// Use Destructuring Assignment to Pass an Object as a Function's Parameters
+
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+const half = ({ max, min }) => ( max + min ) / 2.0;
+
+document.write("<br/> The Half result is: " + half(stats));
+
+//Create Strings using Template Literals
+
+const resultList = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+
+function makeList(arr){
+  const failureItems = [];
+  for(let i = 0; i < arr.length; i++){
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
+  return failureItems;
+}
+
+const failureLists = makeList(resultList.failure);
+
+document.write("<br/> The make list is: " + failureLists);
+
+// Write Concise Object Literal Declarations Using Object Property Shorthand
+
+const createPerson = (name, age, gender) => { return ({name, age, gender})};
+
+document.write("<br/> The output is: " + createPerson("Altaf Hossain", 33, "Male"));
+
+//Write Concise Declarative Functions with ES6
+
+const bicycle = {
+  gear: 2,
+  setGear(newGear){
+    this.gear = newGear;
+  }
+}
+
+bicycle.setGear(48);
+
+document.write("<br/> Bicycle New Gear No: " + bicycle.gear);
+
+// Use class Syntax to Define a Constructor Function
+
+class Vegetable{
+  constructor(name){
+    this.name = name;
+  } 
+}
+
+const carrot = new Vegetable('Cucumber');
+document.write("<br/> Vegetable New Item is: " + carrot.name);
+
+// Use getters and setters to Control Access to an Object
+
+class Thermostat {
+  constructor(fahrenheit) {
+    this.fahrenheit = fahrenheit;
+  }
+  
+  get temperature() {
+    return (5 / 9) * (this.fahrenheit - 32);
+  }
+  
+  set temperature(celsius) {
+    this.fahrenheit = (celsius * 9.0) / 5 + 32;
+  }
+}
+//////////////
+
+
+const thermos = new Thermostat(76);
+let celsius = thermos.temperature;
+thermos.temperature = 26;
+celsius = thermos.temperature;
+document.write("<br/> The Temperature is: " + celsius);
+
+//Create a Module Script
+
+
+
+//Use export to Share a Code Block
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+
+//Example of export: export { uppercaseString, lowercaseString };
+ 
+// Reuse JavaScript Code Using import
+// Example of import: import { uppercaseString, lowercaseString } from './string_functions.js'
+
+//Use * to Import Everything from a File
+
+// Example: import * as stringFunctions from "./string_functions.js"
+
+// Create an Export Fallback with export default
+
+// export default function substract(x, y) {
+//   return x - y;
+// }
+
+// Import a Default Export
+// import subtract from "./math_functions.js"  
+// subtract(7,4);
+
+// Create a JavaScript Promise
+// const makeServerRequest = new Promise ((resolve, reject) => {
+
+// });
+
+// Handle a Fulfilled Promise with then
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+// makeServerRequest.then(result => {
+//   document.write("<br/> The Promise funstion result using 'then': " + result);
+// });
+
+// makeServerRequest.catch(error => {
+//   document.write("<br/> Catch Promise funstion error result using 'then': " + error);
+// });
+
+/***** 
+
+Regula Expression 
+
+*******/
+
+// Using the Test Method
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let myRegexresult = myRegex.test(myString);
+
+document.write("<br/> This search result is: " + myRegexresult);
+
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /waldo/; // Change this line
+let resultWaldo = waldoRegex.test(waldoIsHiding);
+
+document.write("<br/> This search result is: " + resultWaldo);
+
+// Match a Literal String with Different Possibilities
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // Change this line
+let regexResult = petRegex.test(petString);
+
+document.write("<br/> This alternative search result is: " + regexResult);
+
+// Ignore Case While Matching
+
+let myString2= "freeCodeCamp";
+let fccRegex = /freeCodeCAMP/i; // Change this line
+let result2 = fccRegex.test(myString2);
+document.write("<br/> This Flag I search result is: " + result2);
+
+// Extract Matches
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result3 = extractStr.match(codingRegex);
+
+document.write("<br/> This extract Matches search result is: " + result3);
+
+// Find More Than the First Match
+
+let twinkleStar = "Twinkle, twinkle, little star, TWINKLE";
+let starRegex = /Twinkle/gi; // Change this line
+let result4 = twinkleStar.match(starRegex); // Change this line
+
+document.write("<br/> Find More Than the First Match result is: " + result4);
+
+//Match Anything with Wildcard Period
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /un./; // Change this line
+let result5 = unRegex.test(exampleStr);
+
+document.write("<br/> Match Anything with Wildcard Period result is: " + result5);
+
+// Match Single Character with Multiple Possibilities
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result6 = quoteSample.match(vowelRegex);
+
+document.write("<br/> Match Single Character with Multiple Possibilities result is: " + result6);
+
+// Match Letters of the Alphabet
+
+let quoteSample2 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result7 = quoteSample2.match(alphabetRegex);
+document.write("<br/> Match Letters of the Alphabet result is: " + result7);
+
+// Match Numbers and Letters of the Alphabet
+let quoteSample3 = "Blueberry 3.141592653s are delicious.";
+let myRegex2 = /[2-6h-s]/gi; // Change this line
+let result8 = quoteSample3.match(myRegex2);
+
+document.write("<br/> Match Numbers and Letters of the Alphabet result is: " + result8);
+
+// Match Single Characters Not Specified
+
+let quoteSample4 = "3 blind mice.";
+let myRegex3 = /[^0-9aeiou]/gi; // Change this line
+let result9 = quoteSample4.match(myRegex3);
+document.write("<br/> Match Single Characters Not Specified result is: " + result9);
+
+// Match Characters that Occur One or More Times
+
+let difficultSpelling = "mississippi";
+let myRegex4 = /s+/g;
+result10 = difficultSpelling.match(myRegex4);
+
+document.write("<br/> Match s Characters that Occur One or More Times result is: " + result10);
+
+// Match Characters that Occur Zero or More Times
+
+// Only change code below this line
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+
+let result11 = chewieQuote.match(chewieRegex);
+
+document.write("<br/> Match Characters Aa that occur Zero or More Times: " + result11);
+
+// Find One or More Criminals in a Hunt
+let crowd = "P1P2P3P4P5P6CCCP7P8P9";
+let reCreminals = /C+/;
+let matchedCriminals = crowd.match(reCreminals);
+
+document.write("<br/> Find One or More Criminals in a Hunt Result: " + matchedCriminals);
+
+// Match Beginning String Patterns
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result12 = calRegex.test(rickyAndCal);
+
+
+document.write("<br/> Match Beginning String Patterns: " + result12);
+
+// Match Ending String Patterns
+
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result13 = lastRegex.test(caboose);
+
+document.write("<br/> Match Ending String Patterns: " + result13);
+
+// Match All Letters and Numbers
+let quoteSample1 = "Pack my box with five dozen liquor jugs.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result14 = quoteSample1.match(alphabetRegexV2);
+
+document.write("<br/> Match All Letters and Numbers: " + result14);
+
+// Match Everything But Letters and Numbers
+
+let quoteSample5 = "123 456 7890 ABC def GHI jkl MNO pqr STU vwx YZ.";
+let nonAlphabetRegex = /\W/g; // Change this line
+let result15 = quoteSample5.match(nonAlphabetRegex);
+
+document.write("<br/> Match Everything But Letters and Numbers: " + result15);
+
+// Match All Numbers
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let result16 = movieName.match(numRegex).length;
+
+document.write("<br/> Match All Number: " + result16);
+
+// Match All Non-Numbers
+let movieName2 = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let result17 = movieName2.match(noNumRegex).length;
+
+document.write("<br/> Match All No-Number: " + result17);
+
+// username check
+
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let result18 = userCheck.test(username);
+
+document.write("<br/> The user name is: " + result18);
+
+// Code Explanation
+// ^ - start of input
+// [a-z] - first character is a letter
+// [a-z]+ - following characters are letters
+// \d*$ - input ends with 0 or more digits
+// | - or
+// ^[a-z] - first character is a letter
+// \d\d+ - following characters are 2 or more digits
+// $ - end of input
+
+//Match Whitespace
+
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let resultSample = sample.match(countWhiteSpace);
+document.write("<br/> Total Whitespace in the sentence: " + resultSample);
+console.log(resultSample);
+
+// Match Non-Whitespace Characters
+let sample2 = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let resultOfNonWhiteSpace = sample2.match(countNonWhiteSpace).length;
+document.write("<br/> Total letter without Whitespace in the sentence: " + resultOfNonWhiteSpace);
+
+// Specify Upper and Lower Number of Matches
+
+let ohStr = "Ahhh no";
+let ohRegex = /Ah{3,6}\sno/; // Change this line
+let resultOhStr = ohRegex.test(ohStr);
+
+document.write("<br/> Specify Upper and Lower Number of Matches: " + resultOhStr);
+
+
+// Specify Only the Lower Number of Matches
+
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/g; // Change this line
+let resultOfLowMatch = haRegex.test(haStr);
+
+document.write("<br/> Specify Only the Lower Number of Matches: " + resultOfLowMatch);
+
+// Specify Exact Number of Matches
+
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let resultExactNumberMatch = timRegex.test(timStr);
+
+document.write("<br/> Specify Exact Number of Matches: " + resultExactNumberMatch);
+
+// Check for All or None
+
+let favWord = "favourite";
+let favRegex = /favou?rite/; // Change this line
+let resultOfFavWord = favRegex.test(favWord);
+
+document.write("<br/> Check for All or None: " + resultOfFavWord);
+
+//Positive and Negative Lookahead
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let resultOfPassword = pwRegex.test(sampleWord);
+
+document.write("<br/> The password test is: " + resultOfPassword);
+
+//Check For Mixed Grouping of Characters
+let myStringGrouping = "Franklin D. Roosevelt";
+let myRegexGrouping = /(Franklin|Eleanor).*Roosevelt/g; // Change this line
+let resultOfGrouping = myRegexGrouping.test(myStringGrouping);
+
+document.write("<br/> Mixed Grouping of Characters is: " + resultOfGrouping);
+
+// Reuse Patterns Using Capture Groups
+let repeatNum = "42 42 42";
+let reRegexCapture= /^(\d+)\s\1\s\1$/; // Change this line
+let resultOfCapture = reRegexCapture.test(repeatNum);
+//let resultOfCapture = repeatNum.match(reRegexCapture);
+
+document.write("<br/> Reuse Patterns Using Capture Groups is: " + resultOfCapture);
+
+// Use Capture Groups to Search and Replace
+let str = "three two one";
+let fixRegex = /(\w+)\s(\w+)\s(w+)/; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let resultOfReplace = str.replace(fixRegex, replaceText);
+document.write("<br/> Use Capture Groups to Search and Replace: " + resultOfReplace);
+
+// Remove Whitespace from Start and End
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let resultOfWhitespace = hello.replace(wsRegex, "");
+document.write("<br/> Remove Whitespace from Start and End: " + resultOfWhitespace);
+
+/**
+Debugging Tool
+**/
+
+// Use the javascript console to check the value of variable
+
+let a1 = 5;
+let b1 = 1;
+let c1 = "10";
+a1++;
+
+console.log(a1);
+
+// Use typeof to check the type of a variable
+console.log(typeof a1);
+console.log(typeof "c1");
+
+// Catch Misspelled Variable and Function Names
+let receivables = 10;
+let payables = 8;
+let netWorkingCapital = receivables - payables;
+
+document.write(`<br/> Net working capital is: ${netWorkingCapital}`);
+
+// Use an array to store a collection of Data
+
+let yourArray = [1, "rahim", true, "karim", 2];
+
+document.write("<br/>The Array is: " + yourArray + " and Array length is: " + yourArray.length);
+
+// Access an Array's Contents Using Bracket Notation
+
+let myArrayNotation = ["a", "b", "c", "d"];
+// Only change code below this line
+myArrayNotation[1] = "This was b";
+// Only change code above this line
+document.write("<br/>The MyArray is: " + myArrayNotation);
+
+// Add Items to an Array with push() and unshift()
+
+function mixedNumbers(arr) {
+// Only change code below this line
+arr.unshift("I", 2, "three");
+arr.push(7, 'VIII', 9);
+  // Only change code above this line
+  return arr;
+}
+
+document.write("<br/>The mixedNumber is: " + mixedNumbers(['IV', 5, 'six']));
+
+// Remove Items from an Array with pop() and shift()
+
+function popShift(arr){
+  let popped = arr.pop();
+  let shifted = arr.shift();
+  return[shifted, popped];
+}
+
+document.write("<br/>The array removed data: " + popShift(['challenge', 'is', 'not', 'complete']));
+
+// Remove Items Using splice()
+
+const arrSplice = [2, 4, 5, 1, 7, 5, 2, 1];
+let newArrSplice = arrSplice.splice(1, 4);
+document.write("<br> The array after removing the value: " + arrSplice);
+
+// Add Items Using splice()
+
+function htmlColorNames(arr) {
+  // Only change code below this line
+  arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond')
+  // Only change code above this line
+  return arr;
+}
+
+document.write("<br/> Array after adding item Using splice(): " + htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+
+// Copy Array Items Using slice()
+
+function forecast(arr) {
+  return arr.slice(2, 4);
+}
+
+ document.write("<br/> Today Forecast is: " + forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+// Copy an Array with the Spread Operator
+
+function copyMachine(arr, num){
+  let newArr = [];
+  while(num >= 1){
+    newArr.push([...arr]);
+    num--;
+  }
+  return newArr;
+}
+
+document.write("<br/> The copyMachine resutl is: " + copyMachine([true, false, true], 2));
+
+// Combine Arrays with the Spread Operator
+
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; // Change this line
+  return sentence;
+}
+
+document.write("<br/> The spreadOut resutl is: " + spreadOut());
+
+// Check For The Presence of an Element With indexOf()
+
+function quickCheck(arr, elem) {
+  // Only change code below this line
+  if (arr.indexOf(elem) >= 0){
+    return true;
+  }
+    return false;
+  
+  // Only change code above this line
+}
+
+document.write("<br/> The Quick Check result is: " + quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+// Iterate Through All an Array's Items Using For Loops
+
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // change code below this line
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].indexOf(elem) == -1) {
+      //Checks every parameter for the element and if is NOT there continues the code
+      newArr.push(arr[i]); //Inserts the element of the array in the new filtered array
+    }
+  }
+
+  // change code above this line
+  return newArr;
+}
+
+document.write("<br/> The filtered array is: " + filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18));  
+
+// Create complex multi-dimensional Array
+
+let nestedArray = [
+  ['deep'], // 2nd level
+  [['deeper'], ['deeper'] ], // 3rd level array
+  [
+    [['deepest'], ['deepest']], // 4th level array
+    [
+      [['deepest-est?']] // 5th level array
+    ]
+  ]
+];
+
+// Add Key-Value Pairs to JavaScript Objects
+
+let foods = {
+  apple: 25,
+  orange: 32,
+  plums: 28
+}
+
+foods.bannans = 13;
+foods.graps = 35;
+const foodType = 'strawberries';
+foods[foodType] = 27;
+
+document.write("<br/> Food Types with Quantity " + foods);
+
+// Modify an Object Nested Within an Object
+
+let userActivity = {
+  id: 2389432648,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+
+userActivity.data.online = 45;
+
+document.write("<br/> Total online user: " + userActivity.data.online);
+
+//Access Property Names with Bracket Notation
+
+let foods2 = {
+  apples: 25,
+  Oranges: 32,
+  plums: 28,
+  bannans: 13,
+  grapes: 35,
+  strawberries: 27
+};
+
+
+function checkInventory(scannedItem){
+  let itemNumber = foods2[scannedItem];
+  return itemNumber;
+}
+
+document.write("<br/> The Available quantity of item: " +  checkInventory('apples'))
+
+// Use the delete Keyword to Remove Object Properties
+
+let foods3 = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
+
+delete foods3.apples;
+delete foods3.oranges;
+
+console.log(foods3);
+
+// Check if an Object has a Property
+
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+}
+
+function isEveryoneHere(obj) {
+  if (
+    obj.hasOwnProperty("Alan") &&
+    obj.hasOwnProperty("Jeff") &&
+    obj.hasOwnProperty("Sarah") &&
+    obj.hasOwnProperty("Ryan")
+
+  ){
+    return true;
+  }
+  return false;
+};
+
+document.write("<br/> All user is present now?: " + isEveryoneHere(users));
+
+// Iterate Through the Keys of an Object with a for...in Statement
+let users3 = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+}
+
+function countOnline(usersObj) {
+  // Only change code below this line
+  let result = 0;
+  for (let user in usersObj){
+    if(usersObj[user].online == true){
+      result++;
+    }
+  }
+  return result;
+  // Only change code above this line
+}
+
+document.write("<br/> The user is online: " + countOnline(users3));
+
+// Generate an Array of All Object Keys with Object.keys()
+
+function getArrayOfUsers(obj) {
+  // Only change code below this line
+  return Object.keys(obj);
+  // Only change code above this line
+}
+
+console.log(getArrayOfUsers(users3));
+
+// Modify an Array Stored in an Object
+
+let userModify = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  // Only change code below this line
+  userObj.data.friends.push(friend);
+  // Only change code above this line
+  return userObj.data.friends; 
+  // Only change code above this line
+}
+
+console.log(addFriend(userModify, "Pete"));
+
+// Convert Celsius to Fahrenheit
+
+function convertToF(celsius){
+  let fahrenheit = celsius * (9/5) + 32;
+  return fahrenheit;
+}
+
+document.write("<br/> Celsius to Fahrenheit Resuslt is: " + convertToF(30)); 
+
+// Reverse a string
+
+function reverseString(str){
+  let reversedStr = "";
+  for(let i = str.length - 1; i >= 0; i--){
+    reversedStr += str[i];
+  }
+  return reversedStr;
+}
+
+document.write("<br/> Reverse String is: " + reverseString("Hello"));
+
+// Factorialize a Number
+function factorialize(num){
+  let factorialize = 1;
+  for(let i = 1; i <= num; i++){
+    factorialize *= i;
+  }
+  return factorialize;
+}
+
+document.write("<br/> The factorial Number result is: " + factorialize(10));
+
+// Find the Longest Word in a String
+
+function findLongestWordLength(str) {
+  let words = str.split(' ');
+  let maxLength = 0;
+  for(i=0; i < words.length; i++){
+    if(words[i].length > maxLength){
+      maxLength = words[i].length;
+    }
+  }
+
+  return maxLength;
+}
+
+document.write("<br/> The Longest word length is: " + findLongestWordLength("What if we try a super-long word such as otorhinolaryngology"));
+
+// Return Largest Numbers in Arrays
+
+function largestNumberFour(arr){
+  let results = [];
+  for(let i = 0; i < arr.length; i++){
+    let largestNumber = arr[i][0];
+    for(let j = 1; j < arr[i].length; j++){
+      if(arr[i][j] > largestNumber){
+        largestNumber = arr[i][j];
+      }
+    }
+    results[i] = largestNumber; 
+  }
+
+  return results;
+
+}
+
+document.write("<br/> The Largest Number of four sub-array: " + largestNumberFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]))
+
+// Confirm the Ending
+
+function confirmEnding(str, target){
+  return str.slice(str.length - target.length)===target;
+}
+
+document.write("<br/> The ending word match is: " + confirmEnding("Bastian", "n"));
+
+// Repeat a String
+
+function repeatStringNumTimes(str, num){
+  var repeatString = "";
+  while(num > 0){
+    repeatString += str;
+    num --;
+  }
+  return repeatString;
+}
+document.write("<br/> The Repeated sting is: " + repeatStringNumTimes("abc", 3));
+
+// Truncate a String
+function truncateString(str, num) {
+  if(str.length > num){
+    return str.slice(0, num) + "...";
+  }else {
+    return str;
+  }
+}
+
+document.write("<br/> The Truncate String is: " + truncateString("A-tisket a-tasket A green and yellow basket", 8));
+
+// Finders Keepers
+function findElement(arr, func) {
+  let num = 0;
+  for(let i = 0; i < arr.length; i++){
+    num = arr[i];
+    if (func(num)){
+      return num;
+    }
+  }
+  return undefined;
+}
+
+document.write("<br/> The First Element Keepers is: " + findElement([1, 2, 3, 4], num => num % 2 === 0));
+
+// Boo who -- check boolean primitive
+
+function boowhoo(bool){
+  return typeof bool === "boolean";
+}
+
+document.write("<br/> The boolean check is: " + boowhoo("false"));
+
+// Slice and Splice
+function frankenSplice(arr1, arr2, n) {
+ let localArray = arr2.slice();
+  for (let i = 0; i < arr1.length; i++) {
+    localArray.splice(n, 0, arr1[i]);
+    n++;
+  }
+  return localArray
+}
+
+document.write("<br/> The local array is: " + frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+// Falsy Bouncer -- remove all Falsy Value
+
+function bouncer(arr) {
+  let newArray = [];
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i]) newArray.push(arr[i])
+  }
+  return newArray;
+}
+
+document.write("<br/> The truthy value of the Array: " + bouncer([7, "ate", "", false, 9]));
+
+// Where do I Belong
+
+function getIndexToIns(arr, num){
+  arr.sort(function(a, b){
+    return a-b;
+  });
+  for(var a = 0; a < arr.length; a++){
+    if(arr[a] >= num) return a;
+  }
+  return arr.length;
+}
+document.write("<br/> The inserted value index is: " + getIndexToIns([10, 20, 30, 40, 50], 30));
+
+// Mutations
+
+function mutation(arr) {
+  let test = arr[1].toLowerCase();
+  let target = arr[0].toLowerCase();
+  for(let i = 0; i < test.length; i++){
+    if(target.indexOf(test[i]) < 0)  return false;
+  }
+  return true;
+}
+
+document.write("<br/> The Mutation is: " + mutation(["hello", "Hello"]));
+
+// Chunky Monkey
+function chunkArrayInGroups(arr, size) {
+  let newChunkArray = [];
+  for(let i = 0; i < arr.length; i += size){
+    newChunkArray.push(arr.slice(i, i + size));
+  }
+  return newChunkArray;
+}
+
+document.write("<br/> The divided array is: " + chunkArrayInGroups(["a", "b", "c", "d"], 2));
+
+// Use Dot Notation to Access the Properties of an Object
+
+let dog = {
+  name: "Spot",
+  numLegs: 4
+};
+// Only change code below this line
+
+document.write("<br/>The name of Dog: " + dog.name);
+document.write("<br/>The Number of Leg of Dog: " + dog.numLegs);
+
+// Create a Method on an Object
+
+let dog2 = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function(){
+    return "<br/> This dog has " + dog2.numLegs + " legs."
+  }
+
+};
+
+document.write(dog2.sayLegs());
+
+// Make Code More Reusable with the this Keyword
+
+let dog3 = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "<br/>This dog has " + this.numLegs + " legs.";}
+};
+
+document.write(dog3.sayLegs());
+
+// Define a Constructor Function
+
+function Dog(){
+  this.name = "Mintu";
+  this.color = "white";
+  this.numLegs = 4;
+}
+
+//Use a Constructor to Create Objects
+function Dog3() {
+  this.name = "Rupert";
+  this.color = "brown";
+  this.numLegs = 4;
+}
+// Only change code below this line
+
+let hound = new Dog3();
+document.write("<br/> The hound name is: " + hound.name)
+
+// Extend Constructors to Receive Arguments
+function Dog4(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 4;
+}
+let terrier = new Dog4("Mintu", "Brown");
+
+document.write("<br/> The new Dog Terrier properties are: " + terrier.name + "<br/>");
+
+//Verify an Object's Constructor with instanceof
+
+function House(numBedrooms) {
+  this.numBedrooms = numBedrooms;
+}
+
+// Only change code below this line
+let myHouse = new House(4);
+document.write(myHouse instanceof House);
+
+// Understand Own Properties
+function Bird2(name) {
+  this.name = name;
+  this.numLegs = 2;
+}
+
+let canary2 = new Bird2("Tweety");
+let ownProps = [];
+// Only change code below this line
+for (let property in canary2){
+  if(canary2.hasOwnProperty(property)){
+    ownProps.push(property);
+  }
+}
+
+document.write("<br/>Canary own property is: " + ownProps);
+
+// Use Prototype Properties to Reduce Duplicate Code
+
+function Cat(name, numLegs) {
+  this.name = name;
+  
+}
+Cat.prototype.numLegs = 2;
+
+// Only change code above this line
+let beagle = new Cat("Snoopy");
+document.write("<br/> The total leg of Beagle dog: " + beagle.numLegs)
+
+// Iterate Over All Properties
+
+function Dog5(name) {
+  this.name = name;
+}
+
+Dog5.prototype.numLegs = 4;
+
+let beagle2 = new Dog5("Snoopy");
+
+let ownProps2 = [];
+let prototypeProps = [];
+
+// Only change code below this line
+for (let property in beagle2){
+  if(beagle2.hasOwnProperty(property)){
+    ownProps2.push(property);
+  }else{
+    prototypeProps.push(property);
+  }
+}
+
+document.write("<br/>" + ownProps2);
+document.write("<br/>" + prototypeProps);
+
+// Understand the Constructor Property
+function Dog6(name) {
+  this.name = name;
+}
+
+// Only change code below this line
+function joinDogFraternity(candidate) {
+  if(candidate.constructor === Dog6){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+document.write("The result is: " + joinDogFraternity("Mintu"));
+
+// Use Inheritance So You Don't Repeat Yourself
+function Cat(name) {
+  this.name = name;
+}
+
+Cat.prototype = {
+  constructor: Cat
+};
+
+function Bear(name) {
+  this.name = name;
+}
+
+Bear.prototype = {
+  constructor: Bear
+};
+
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+// Use Closure to Protect Properties Within an Object from Being Modified Externally
+function BirdClosure() {
+ let weight = 15;
+this.getWeight = function(){
+  return weight;
+};
+
+}
+
+//Understand the Immediately Invoked Function Expression (IIFE)
+
+(function () {
+  console.log("A cozy nest is ready");
+})();
+
+//Use an IIFE to Create a Module
+let funModule = (function(){
+  return {
+    isCuteMixin: function(obj){
+      obj.isCute = function(){
+        return true;
+      };
+    },
+    singMixin: function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+    };
+
+  }
+  }
+
+})();
+
+// Leanr about functional programming
+// Function that returns a string representing a cup of green tea
+const prepareTea = () => 'greenTea';
+
+/*
+Given a function (representing the tea type) and number of cups needed, the
+following function returns an array of strings (each representing a cup of
+a specific type of tea).
+*/
+const getTea = (numOfCups) => {
+  const teaCups = [];
+
+  for(let cups = 1; cups <= numOfCups; cups += 1) {
+    const teaCup = prepareTea();
+    teaCups.push(teaCup + "<br/>");
+  }
+  return teaCups;
+};
+
+// Only change code below this line
+const tea4TeamFCC = getTea(40);
+document.write("<br/>Total Tea for team: " + tea4TeamFCC)
+
+// Understand Functional Programming Terminology
+
+const prepareGreenTea = () => 'greenTea';
+
+// Function that returns a string representing a cup of black tea
+const prepareBlackTea = () => 'blackTea';
+
+/*
+Given a function (representing the tea type) and number of cups needed, the
+following function returns an array of strings (each representing a cup of
+a specific type of tea).
+*/
+const getTea1 = (prepareTea, numOfCups) => {
+  const teaCups = [];
+
+  for(let cups = 1; cups <= numOfCups; cups += 1) {
+    const teaCup = prepareTea();
+    teaCups.push(teaCup);
+  }
+  return teaCups;
+};
+
+// Only change code below this line
+const tea4GreenTeamFCC = getTea1(prepareGreenTea, 27);
+const tea4BlackTeamFCC = getTea1(prepareBlackTea, 13);
+// Only change code above this line
+document.write(
+  tea4GreenTeamFCC, 
+  tea4BlackTeamFCC
+);
+var Window = function(tabs) {
+  this.tabs = tabs; // We keep a record of the array inside the object
+};
+
+// When you join two windows into one window
+Window.prototype.join = function (otherWindow) {
+  this.tabs = this.tabs.concat(otherWindow.tabs);
+  return this;
+};
+
+// When you open a new tab at the end
+Window.prototype.tabOpen = function (tab) {
+  this.tabs.push('new tab'); // Let's open a new tab for now
+  return this;
+};
+
+// When you close a tab
+Window.prototype.tabClose = function (index) {
+
+  // Only change code below this line
+
+  var tabsBeforeIndex = this.tabs.splice(0, index); // Get the tabs before the tab
+  var tabsAfterIndex = this.tabs.splice(1); // Get the tabs after the tab
+
+  this.tabs = tabsBeforeIndex.concat(tabsAfterIndex); // Join them together
+
+  // Only change code above this line
+
+  return this;
+ };
+
+// Let's create three browser windows
+var workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp']); // Your mailbox, drive, and other work sites
+var socialWindow = new Window(['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium']); // Social sites
+var videoWindow = new Window(['Netflix', 'YouTube', 'Vimeo', 'Vine']); // Entertainment sites
+
+// Now perform the tab opening, closing, and other operations
+var finalTabs = socialWindow
+  .tabOpen() // Open a new tab for cat memes
+  .join(videoWindow.tabClose(2)) // Close third tab in video window, and join
+  .join(workWindow.tabClose(1).tabOpen());
+document.write("<br/>" + finalTabs.tabs);
+//Understand the Hazards of Using Imperative Code
+
+// Avoid Mutations and Side Effects Using Functional Programming
+
+var fixedValue = 4;
+
+function incrementer () {
+  // Only change code below this line
+  return fixedValue + 1;
+
+  // Only change code above this line
+}
+var newValue = incrementer();
+document.write("<br/> The result is: " + newValue);
+
+//Pass Arguments to Avoid External Dependence in a Function
+
+// The global variable
+var fixedValue1 = 4;
+
+// Only change code below this line
+function incrementer1 (value) {
+
+  return value + 1;
+  // Only change code above this line
+}
+
+var differentValue = incrementer1(fixedValue1);
+document.write("<br/> The result is: " + differentValue);
+
+// Implement map on a Prototype
+
+// The global variable
+var sArray = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+  var newArray = [];
+  // Only change code below this line
+  for(let i = 0; i < this.length; i++){
+    newArray.push(callback(this[i]));
+  }
+  // Only change code above this line
+  return newArray;
+};
+
+var new_s = sArray.myMap(function(item) {
+  return item * 2;
+});
+
+document.write("<br/> The new array is: " + new_s);
+
+// Return Part of an Array Using the slice Method
+
+function sliceArray(anim, beginSlice, endSlice) {
+  // Only change code below this line
+  var sliceArray = anim.slice(beginSlice, endSlice);
+  return sliceArray;
+  // Only change code above this line
+}
+var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+document.write("<br/> The Slice array is: " + sliceArray(inputAnim, 1, 3));
+
+// Remove elements from an array using slice insteat of splice
+
+function nonMutatingSplice(cities){
+  return cities.slice(0, 3);
+}
+
+var inputCities = ["Chicago", "Delihi", "Islamabad", "London", "Berlin"];
+
+document.write("<br/> The New Array after Slice from original Array: " + nonMutatingSplice(inputCities));
+
+// Combine Two arrays using the concat Method
+
+function nonMutatingConcat(original, attach){
+  return original.concat(attach);
+}
+
+var first = [1, 2, 3];
+var second = [4, 5, 6];
+
+document.write("<br/> The combine array is: " + nonMutatingConcat(first, second));
+
+//Add Elements to the End of an Array Using concat Instead of push
+function nonMutatingPush(original, newItem) {
+  // Only change code below this line
+  return original.concat(newItem);
+
+  // Only change code above this line
+}
+var first = [1, 2, 3];
+var second = [4, 5];
+document.write("<br/> The array after added another array item: " + nonMutatingPush(first, second));
+
+// Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem
+const squareList = arr => {
+  return arr.filter(num => num > 0 && num % parseInt(num) === 0).map(num => Math.pow(num, 2));
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+document.write("<br/> The Integer Array is: " + squaredIntegers);
+
+// Sort an Array Alphabetically using the sort Method
+
+function alphabeticalOrder(arr) {
+  return arr.sort(function(a, b){
+    return a === b ? 0 : a > b ? 1 : -1;
+  });
+}
+
+alphaValue = alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+document.write("<br/> The alphabetical Order: " + alphaValue);
+
+// Return a Sorted Array Without Changing the Original Array
+
+var globalArray = [5, 6, 3, 2, 9];
+function nonMutatingSort(arr) {
+  return [].concat(arr).sort(function(a, b){
+    return a - b;
+  });
+};
+
+document.write("<br/> The new Array is: " + nonMutatingSort(globalArray));
+
+// Split a String into an Array Using the split Method
+
+function splitify(str) {
+  // Only change code below this line
+  var newStr = str.split(/\W/);
+  return newStr;
+
+  // Only change code above this line
+}
+document.write("<br/>" + splitify("Hello World,I-am code"));
+
+// Combine an Array into a String Using the join Method
+
+function sentensify(str) {
+  // Only change code below this line
+  var arr = str.split(/\W/);
+var newSent = arr.join(" ");
+return newSent;
+
+  // Only change code above this line
+}
+document.write("<br/>" + sentensify("May-the-force-be-with-you"));
+
+// Apply Functional Programming to Convert Strings to URL Slugs
+
+var globalTitle = "Ramadan is running";
+
+function urlSlug(title) {
+  return title.toLowerCase().trim().split(/\s+/).join("-")
+}
+
+document.write("<br/> The Url Slug is: " + urlSlug(globalTitle));
+
+// Use the every Method to Check that Every Element in an Array Meets a Criteria
+
+function checkPositive(arr) {
+  // Only change code below this line
+return arr.every(function(currentValue){
+  return currentValue > 0
+});
+
+  // Only change code above this line
+}
+
+document.write("<br/> The array is: " + checkPositive([1, 2, 3, 4, 5]));
+
+// Use the some Method to Check that Any Elements in an Array Meet a Criteria
+
+function checkPositive2(arr) {
+  // Only change code below this line
+return arr.some(function(currentValue){
+  return currentValue > 0;
+})
+
+  // Only change code above this line
+}
+
+document.write("<br/> The array of some method is: " + checkPositive2([-1, -2, -3, -4, -5]));
+
+// Introduction to Currying and Partial Application
+
+function add(x) {
+  // Only change code below this line
+  return function(y){
+    return function(z){
+      return x + y + z;
+    }
+  }
+  // Only change code above this line
+}
+
+document.write("<br/> The Add function result is: " + add(10)(20)(30));
+
+// Sum All Numbers in a Range
+
+function sumAll(arr) {
+  let max = Math.max(arr[0], arr[1]);
+  let min = Math.min(arr[0], arr[1]);
+  let sumBetween = 0;
+  for(var i = min; i<= max; i++){
+    sumBetween += i;
+  }
+  return sumBetween;
+}
+
+document.write("<br/> The summation of Array numbers: " + sumAll([5, 10]));
+
+// Diff Two Arrays
+
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  function onlyInFirst(first, second){
+    for(var i = 0; i < first.length; i++){
+      if(second.indexOf(first[i]) === -1){
+        newArr.push(first[i]);
+      }
+    }
+  }
+  onlyInFirst(arr1, arr2);
+  onlyInFirst(arr2, arr1);
+  return newArr;
+}
+
+document.write("<br/> The new Array is: " + diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+
+// Seek and Destroy
+
+function destroyer(arr) {
+  let valsToRemove = Object.values(arguments).slice(1);
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < valsToRemove.length; j++) {
+      if (arr[i] === valsToRemove[j]) {
+        delete arr[i];
+      }
+    }
+  }
+  return arr.filter(item => item !== null);
+}
+
+document.write(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+
+// Wherefore art thou
+
+function whatIsInAName(collection, source) {
+  // Only change code below this line
+  var srcKeys = Object.keys(source);
+  return collection.filter(function(obj){
+    for(var i=0; i<srcKeys.length; i++){
+      if(!obj.hasOwnProperty(srcKeys[i]) || obj[srcKeys[i]] !== source[srcKeys[i]])
+      {
+        return false;
+      }
+    }
+    return true;
+  });
+
+  // Only change code above this line
+  
+}
+
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }));
+
+// Spinal Tap Case
+
+function spinalCase(str) {
+  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+  return str.toLowerCase().split(/(?:_| )+/).join("-");
+}
+
+console.log(spinalCase('AllThe-small Things'));
+
+// Pig Latin
+
+function translatePigLatin(str) {
+  let consonantRegex = /^[^aeiou]+/;
+  let myConsonants = str.match(consonantRegex);
+  return myConsonants !== null? str.replace(consonantRegex, "").concat(myConsonants).concat("ay") : str.concat("way");
+  return str;
+}
+
+console.log(translatePigLatin("rhythm"));
+
+
+</script>
+</body>
+
+</html>

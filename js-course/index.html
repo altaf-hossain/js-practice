@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=J, initial-scale=1.0">
+    <title>Javascript Practice</title>
+    <script src="js/practice.js"></script>
+    <script>
+        var firstName, lastName; 
+        firstName = "<br><br/>Hello World";
+        lastName = "<br/> Altaf"
+        document.write(firstName);
+        document.write(lastName);
+        
+        // For in Loop
+    document.write("<br/>Example of For in Loop <br/>"); 
+    var objforin = {
+        firstName: "Altaf",
+        lastName: "Hossain",
+        age: 34,
+        country: "Bangladesh"
+    };
+
+    for(var key in objforin){
+        document.write(key + " : " + objforin[key] + "<br/>");
+    }
+
+    // Map method Example
+    document.write("<br/>JavaScript Map Method Example <br/>"); 
+
+    // var aryMap = [10, 5, 7, 9];
+
+    var aryMap = [
+    {fname: "Rahim", lname: "Uddin"},
+    {fname: "Karim", lname: "Ullah"},
+    {fname: "Sadik", lname: "Khan"},
+    ];
+
+    var newAryMap = aryMap.map(mapTest);
+    document.write(newAryMap);
+
+    function mapTest(x){
+        return x.fname + " " + x.lname;
+    }
+
+
+    </script>
+</head>
+<body>
+    <h1>This is title</h1>
+    <script>
+        document.write("Hey! I'm from body."); /* this is commment
+        */
+    </script>
+
+    <h2>Javascript Event list</h2>
+    <li>Click (onclick)</li>
+    <li>Double Click (ondblclick)</li>
+    <li>Right Click (oncontextmenu)</li>
+    <li>Mouse Hover (onmouseenter)</li>
+    <li>Mouse Out (onmouseout)</li>
+    <li>Mouse Down (onmousedown)</li>
+    <li>Mouse Up (onmouseup)</li>
+    <li>Key Press (onkeypress)</li>
+    <li>Key Up (onkeyup)</li>
+    <li>Load (onload)</li>
+    <li>Unload (onunload)</li>
+    <li>Resize (onresize)</li>
+    <li>Scroll (onscroll)</li>
+
+    <h2>Example of Event</h2>
+    <button onclick="eventFn();">Click Me</button>
+    <button ondblclick="eventFn();">Double Click</button>
+    <button oncontextmenu="eventFn();">Right Click</button>
+    <button onmouseenter="eventFn();">Mouse hover</button>
+    <button onmouseout="eventFn();">Mouse Out</button>
+    <button onmousedown="eventFn();">Mouse down</button>
+    <button onmouseup="eventFn();">Mouse Up</button>
+    <button onkeypress="eventFn();">Key Press work on body tag</button>
+
+</body>
+</html>
