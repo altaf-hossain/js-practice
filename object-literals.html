@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Object Literals</title>
+
+    <script>
+        let name = "Altaf Hossain";
+        let course = "B.Sc";
+
+        let obj = {
+            name,
+            course
+        };
+
+       // console.log(obj);
+
+        // 2nd example
+
+        let n = "student";
+
+        var obj1 = {
+            [n + "name"] : "Karim Baba",
+            course: "BSS",
+            detail: function(){
+                return `${this.studentname} is a student of ${this.course}`
+            }
+        }
+
+        //console.log(obj1);
+        //console.log(obj1.detail());
+
+        //3rd example
+
+        var obj2 = {
+            [n + "name"] : "Karim Baba",
+            course: "BSS",
+            // detail(){
+            //     return `${this.studentname} is a student of ${this.course}`
+            // }
+
+            'detail show'(){
+                return `${this.studentname} is a student of ${this.course}`
+            }
+        }
+
+       // console.log(obj2);
+        //console.log(obj2.detail());
+        //console.log(obj2['detail']());
+        //console.log(obj2['detail show']());
+
+        // fourth Example
+
+        let fname = "Rahim";
+        let lname = "Baba";
+        let course2 = "B.Sc";
+
+        function student(fname, lname, course2){
+            let fullname = `${fname} ${lname}`;
+            return {fullname, course2};
+        }
+
+        console.log(student(fname, lname, course2));
+
+        let s = student(fname, lname, course2);
+        console.log(s.fullname);
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
