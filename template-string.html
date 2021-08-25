@@ -6,7 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Template String</title>
     <script>
+        let user = "Yahoo Baba";
+        let marks = 450;
+        //document.write("Hello " + user + "Welcome to 2021"); // normal way
+       // document.write(`Hello ${user} Welcome to 2021`); // template string way
+        //document.write(`Hello ${user}, Your marks is ${marks}`);
+        
+        let hello = `Hello "${user}", 
+        Your 'marks' 
+        is ${marks} <br>`;
 
+        document.write(hello);
+
+        //Function Example
+
+        let firstName = "Karim";
+        let lastName = "Baba";
+
+        function fullname(firstName, lastName){
+            return `${firstName} ${lastName}`
+        }
+
+        let helloFun = `Hello ${fullname(firstName,lastName)}`
+        
+        document.write(helloFun);
+        //console.log(hello)
     </script>
 </head>
 <body>
