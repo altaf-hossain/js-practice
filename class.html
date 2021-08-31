@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Class </title>
+    <script>
+        class student{
+            constructor(name, age){
+                this.studentName = name;
+                this.studentAge = age;
+                console.log("Constructor Function");
+            }
+            message(){
+                console.log(`Hello ${this.studentName} your age is: ${this.studentAge}`);
+            }
+            // error(){
+            //     console.log("This is Error Message");
+            // }
+
+            static staticMethod(){
+                console.log("Static Function");
+            }
+        }
+
+        let a = new student("Karim Baba", 30);
+        let b = new student("Rahim Baba", 36);
+       
+        // a.error();
+        a.message();
+        b.message();
+
+       // call the static method
+
+       student.staticMethod();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
