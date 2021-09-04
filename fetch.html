@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Method API(Application Programming Interface</title>
+</head>
+<body>
+    <form id="myForm">
+        Title <input type="text" id="titleText"><br><br>
+        Body <input type="text" id="bodyText"><br><br>
+        User Id <input type="text" id="userId"><br><br>
+        <input type="submit" id="saveForm">
+
+    </form>
+    <script>
+       fetch("student_data.json")
+       .then((response) => response.json())
+       .then((data) => {
+           console.log(data);
+           for(var x in data){
+               var a = `${data[x].name} - ${data[x].age} - ${data[x].city} <br>`;
+               document.write(a);
+           }
+       })
+       .catch((error) => document.write(`Can't Fetch data`));
+       
+       // Insert the data
+
+    //    var obj = {
+    //         name: 'Rahim',
+    //         age: '39',
+    //         city: 'Rangpur',
+    //     }
+    //    fetch('https://jsonplaceholder.typicode.com/posts', {
+    //     method: 'POST',
+    //     body: JSON.stringify(obj),
+    //     headers: {
+    //         'Content-type': 'application/json; charset=UTF-8',
+    //     },
+    //     })
+    //     .then((response) => response.json())
+    //     .then((json) => console.log(json));
+
+        // form data
+
+        // document.getElementById("saveForm").addEventListener("click", function(e){
+        //     e.preventDefault();
+            
+        //     var formObj = {
+        //     title: document.getElementById("titleText").value,
+        //     body: document.getElementById("bodyText").value,
+        //     userId: document.getElementById("userId").value,
+        //     }
+
+        //     fetch('https://jsonplaceholder.typicode.com/posts', {
+        //     method: 'POST',
+        //     body: JSON.stringify(formObj),
+        //     headers: {
+        //         'Content-type': 'application/json; charset=UTF-8',
+        //     },
+        //     })
+        //     .then((response) => response.json())
+        //     .then((json) => console.log(json));
+        // });
+
+        //The short way to fetch from data
+
+        // document.getElementById("saveForm").addEventListener("click", function(e){
+        //     e.preventDefault();
+            
+        //     // var formObj = {
+        //     // title: document.getElementById("titleText").value,
+        //     // body: document.getElementById("bodyText").value,
+        //     // userId: document.getElementById("userId").value,
+        //     // }
+
+        //     fetch('https://jsonplaceholder.typicode.com/posts', {
+        //     method: 'POST',
+        //     body: new FormData(document.getElementById("myForm")),
+        //     headers: {
+        //         'Content-type': 'application/x-www-form-urlencoded',
+        //     },
+        //     })
+        //     .then((response) => response.json())
+        //     .then((json) => console.log(json));
+        // });
+
+        // for old browser like Interent Exploere
+
+        // if(window.fetch){
+        //     // works when browser fetch the code
+        // }else{
+        //     // works when browser cant detect fetch method 
+        // }
+        
+    </script>
+</body>
+</html>
