@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Symbol</title>
+    <script>
+        let id1 = Symbol("Hello");
+        let id2 = Symbol("Hello");
+
+
+        console.log(id1 == id2);
+
+        let str1 = "Hello";
+        let str2 = "Hello";
+        
+        console.log(str1 == str2);
+        //console.log(typeof id); check datatype
+
+        let id = Symbol("Hello");
+        console.log(id);
+        //alert(id.toString());
+        //alert(id.description);
+        console.log(id.description);
+
+        // object Exaample
+
+        let age = Symbol("age");
+
+        let user = {
+            name: "Rahim Baba",
+            class: "B.Sc"
+            //[age]: 25
+        }
+
+        user[age] = 25; // another way to assign "Age"
+
+       // for in loop example, For can't read Symbol()
+
+    //    for(let key in user){
+    //        console.log(key);
+    //    }
+        // console.log(user.class);
+        // console.log(user[age]);
+
+        console.log(JSON.stringify(user)); // JSON format e Symbol kaj kore na
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
