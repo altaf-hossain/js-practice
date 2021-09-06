@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await</title>
+    <script>
+        async function test(){
+            return "Hello";
+        }
+        
+        //another way Aysnc function
+
+        // let test = async function(){
+        //     return "Hello";
+        // }
+
+        // Aysnc with arrow function
+        //let test = async() => "Hello";
+
+        // test().then((result) =>{
+        //     console.log(result)
+        // });
+
+        // example of Await method
+
+        async function test2(){
+            try{
+                const response = await fetch("student_data.json");
+                const students = await response.json();
+                
+                return students;
+
+                // short format 
+
+               // return(await fetch("student_data.json")).json();
+
+            }catch(error){
+                console.log(error);
+            }
+            
+            
+        }
+        test2().then((res) => {
+            console.log(res);
+        });
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
