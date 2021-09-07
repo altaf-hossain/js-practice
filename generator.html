@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Generator</title>
+    <script>
+        // function *generateit(){
+        //     // yield 'The first yeild';
+        //     // yield 'The second yeild';
+        //     // yield 'The third yeild';
+
+        //     // auto increase yeild
+
+        //     let nextNum = 300;
+        //     while(true){
+        //         yield(nextNum++);
+        //     }
+
+        // }
+
+        let g = generateit();
+        // console.log(g.next().value);
+        // g.next();
+        // console.log(g.next().value);
+
+        // for example
+
+        // for(let value of g){
+        //     console.log(value); 
+        // }
+
+        // for auto increase
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+
+        // another way generate example
+        // function *generateit(){
+        //     let yArray = [yield,yield,yield];
+        //     console.log(`Result: ${yArray}`);
+        // }
+        // g.next();
+        // g.next(600);
+        // g.next(700);
+        // g.next(800);
+
+        //string example
+
+        // g.next('PHP');
+        // g.next('Python');
+        // g.next('Java');
+
+        // another way generate example with array and variable
+        function *generateit(){
+            // yield 55;
+            // yield* ['Node', 'Angular', 'React'];
+
+            yield 'PHP';
+            yield 'Node';
+            yield 'Angular';
+            yield 'React';
+        }
+
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+        console.log(g.next().value);
+        console.log(g.return("Ending Now"));
+        //console.log([...g]);//using spread operator
+        console.log(g.next().value);
+       
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
